@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "NVLMF"
+version = "0.1"
+description="change"
+keywords=["deep learning", "NVLM-D-72B", "multi-modal"]
+dependencies = [
+  "numpy", "tqdm", "Pillow", "flax", "jaxlib"
+]
+
+[tool.setuptools.packages.find]
+where=["NVLM-Flax"]
+include=["NVLM-Flax*"]
