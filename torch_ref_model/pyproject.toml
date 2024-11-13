@@ -3,14 +3,14 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "NVLMF"
+name = "NVLMT"
 version = "0.1"
 description="change"
 keywords=["deep learning", "NVLM-D-72B", "multi-modal"]
 dependencies = [
-  "numpy", "tqdm", "Pillow", "flax", "jaxlib", "torch", "transformers"
+  "numpy", "tqdm", "Pillow", "torch", "transformers"
 ]
 
 [tool.setuptools.packages.find]
-where=["NVLM-Flax"]
-include=["NVLM-Flax*"]
+where=["./"]
+include=["*"]
